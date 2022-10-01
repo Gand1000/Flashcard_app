@@ -26,21 +26,10 @@ urlpatterns = [
         name="card-update"
     ),
 
-]
-"""urlpatterns = [
     path(
-       
-        "new",
-        views.CardCreateView.as_view(),
-        name="card-create"
+        "box/<int:box_num>",
+        views.BoxView.as_view(),
+        name="box"
     ),
-]
 
-urlspatterns = [
-    path(
-
-        "edit/<int:pk>",
-        views.CardUpdateView.as_view(),
-        name="card-update"
-    ),
-]"""
+] 
