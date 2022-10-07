@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn flashcards.wsgi
+web: gunicorn <flashcards>.wsgi
